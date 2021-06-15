@@ -13,6 +13,7 @@
   file:
     path: /opt/mob-{{ mob_version }}
     state: directory
+    mode: 0755
 - name: Unarchive mob
   unarchive:
     src: /tmp/mob_v{{ mob_version }}_linux_amd64.tar.gz
